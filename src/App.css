@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #020307;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.jarvis-interface {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background:
+    radial-gradient(
+      circle at center,
+      #101722 0%,
+      #05080e 45%,
+      #010204 100%
+    );
+}
+
+canvas {
+  position: absolute !important;
+  inset: 0;
+}
+
+.title {
+  position: absolute;
+  top: 35px;
+  left: 45px;
+  z-index: 10;
+
+  font-size: 26px;
+  letter-spacing: 7px;
+  font-weight: 300;
+
+  color: #e5f7ff;
+
+  text-shadow:
+    0 0 10px #7fdfff,
+    0 0 25px #2299ff;
+}
+
+.subtitle {
+  position: absolute;
+  top: 72px;
+  left: 47px;
+  z-index: 10;
+
+  font-size: 10px;
+  letter-spacing: 4px;
+
+  color: #4e9bb8;
+}
+
+.status-dot {
+  display: inline-block;
+
+  width: 9px;
+  height: 9px;
+
+  margin-right: 12px;
+
+  border-radius: 50%;
+
+  background: #32d9ff;
+
+  box-shadow:
+    0 0 8px #32d9ff,
+    0 0 20px #32d9ff;
+}
+
+.system-status {
+
+  position: absolute;
+
+  right: 45px;
+  bottom: 40px;
+
+  z-index: 10;
+
+  width: 230px;
+
+  padding: 18px;
+
+  border-left: 1px solid rgba(70, 190, 255, 0.5);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 150, 255, 0.08),
+      transparent
+    );
+
+  color: #6da9bd;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  line-height: 2;
+}
+
+.system-status span {
+
+  float: right;
+
+  color: #36dfff;
+
+  text-shadow:
+    0 0 8px #36dfff;
+}
